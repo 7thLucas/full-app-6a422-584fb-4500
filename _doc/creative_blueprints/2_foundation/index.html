@@ -1,0 +1,84 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 2.5rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+  .mode-landscape .sl-left { width: 50%; }
+  .mode-landscape .sl-right { width: 50%; }
+  .mode-portrait .sl-left { width: 100%; }
+  .mode-portrait .sl-right { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white" style="font-family: {{config.font.textFont}}, sans-serif;">
+  <div class="h-full flex flex-col p-10">
+    <!-- Header -->
+    <div class="mb-6">
+      <div class="flex items-center gap-2 mb-1">
+        <div class="w-6 h-1 rounded-full" style="background: {{config.brandColor.primary}};"></div>
+        <span class="text-xs font-bold uppercase tracking-widest" style="color: {{config.brandColor.mutedForeground}};">Foundation</span>
+      </div>
+      <h2 class="font-black text-3xl" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">The gap healthy eating creates</h2>
+    </div>
+
+    <!-- Split layout -->
+    <div class="sl-layout flex flex-1">
+      <!-- Problem -->
+      <div class="sl-left flex flex-col">
+        <div class="rounded-2xl p-6 h-full" style="background: #FEF2F2; border: 1px solid #FCA5A5;">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="text-xl">⚠️</span>
+            <span class="font-bold text-sm uppercase tracking-wide" style="color: #DC2626;">The Problem</span>
+          </div>
+          <h3 class="font-bold text-lg mb-3" style="font-family: {{config.font.headingFont}}, sans-serif; color: #1C1917;">Eating healthier is fragmented, exhausting, and inconsistent</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: #44403C;">Users who want to eat better face a broken workflow: manually searching recipes, calculating nutrition, cross-referencing dietary restrictions, building grocery lists, and tracking progress — all in separate, disconnected tools.</p>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-start gap-2">
+              <span class="text-base mt-0.5">❌</span>
+              <p class="text-sm" style="color: #44403C;">Hours lost searching and calculating manually</p>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-base mt-0.5">❌</span>
+              <p class="text-sm" style="color: #44403C;">Generic plans that ignore allergies, goals, and preferences</p>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-base mt-0.5">❌</span>
+              <p class="text-sm" style="color: #44403C;">No accountability or momentum — goals abandoned within weeks</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-right flex flex-col">
+        <div class="rounded-2xl p-6 flex flex-col h-full" style="background: {{config.brandColor.accent}}; border: 1px solid {{config.brandColor.sidebarBorder}};">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="text-xl">✅</span>
+            <span class="font-bold text-sm uppercase tracking-wide" style="color: {{config.brandColor.primary}};">The Solution</span>
+          </div>
+          <h3 class="font-bold text-lg mb-3" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">{{config.appName}}: one AI that does it all</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: {{config.brandColor.foreground}};">Users answer a short onboarding questionnaire. The AI instantly generates a complete personalized weekly meal plan — with explanations for every choice. Grocery lists, nutrition tracking, progress monitoring, and an always-on AI nutrition coach unify everything in one place.</p>
+          <div class="flex flex-col gap-2 mt-auto">
+            <div class="flex items-start gap-2">
+              <span class="text-base mt-0.5">🎯</span>
+              <p class="text-sm" style="color: {{config.brandColor.foreground}};">Tailored to your goals, allergies, and cooking ability</p>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-base mt-0.5">🛒</span>
+              <p class="text-sm" style="color: {{config.brandColor.foreground}};">Smart grocery lists auto-built from your weekly plan</p>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-base mt-0.5">🤖</span>
+              <p class="text-sm" style="color: {{config.brandColor.foreground}};">AI Nutrition Coach learns your habits and keeps you on track</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="rounded-2xl overflow-hidden mt-4" style="height: 140px;">
+          <img
+            src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=flat%20lay%20colorful%20fruits%20vegetables%20healthy%20ingredients%20white%20background%20minimal%20food%20photography"
+            alt="Healthy ingredients"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
