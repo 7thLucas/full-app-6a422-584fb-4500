@@ -1,0 +1,91 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 2rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+  .mode-landscape .sl-left { width: 48%; }
+  .mode-landscape .sl-right { width: 52%; }
+  .mode-portrait .sl-left { width: 100%; }
+  .mode-portrait .sl-right { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white" style="font-family: {{config.font.textFont}}, sans-serif;">
+  <div class="h-full flex flex-col p-10">
+    <!-- Header -->
+    <div class="mb-5">
+      <div class="flex items-center gap-2 mb-1">
+        <div class="w-6 h-1 rounded-full" style="background: {{config.brandColor.primary}};"></div>
+        <span class="text-xs font-bold uppercase tracking-widest" style="color: {{config.brandColor.mutedForeground}};">North Star</span>
+      </div>
+      <h2 class="font-black text-3xl" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">The number this app lives or dies by</h2>
+    </div>
+
+    <!-- Projected label -->
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-5 self-start" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+      <span class="text-xs font-bold" style="color: {{config.brandColor.mutedForeground}};">📊 Projected impact — based on your inputs</span>
+    </div>
+
+    <div class="sl-layout flex flex-1">
+      <!-- Left: Operation definition -->
+      <div class="sl-left flex flex-col gap-3">
+        <!-- Verified operation -->
+        <div class="rounded-2xl p-5" style="background: {{config.brandColor.accent}}; border: 1px solid {{config.brandColor.sidebarBorder}};">
+          <div class="text-xs font-bold uppercase tracking-wide mb-2" style="color: {{config.brandColor.primary}};">Verified Operation</div>
+          <h3 class="font-black text-lg mb-2" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">Weekly Meal Plan Generated</h3>
+          <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">A real user completes the onboarding questionnaire and the AI delivers a personalized 7-day meal plan. This is the core domain event {{config.appName}} exists to perform.</p>
+        </div>
+
+        <!-- Secondary operations -->
+        <div class="rounded-2xl p-4" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+          <div class="text-xs font-bold mb-2" style="color: {{config.brandColor.mutedForeground}};">Supporting operations also tracked:</div>
+          <div class="flex flex-col gap-1">
+            <div class="flex items-center gap-2 text-xs" style="color: {{config.brandColor.foreground}};">
+              <span style="color: {{config.brandColor.primary}};">●</span> Meal logged by user (daily completion)
+            </div>
+            <div class="flex items-center gap-2 text-xs" style="color: {{config.brandColor.foreground}};">
+              <span style="color: {{config.brandColor.secondary}};">●</span> Grocery list submitted / checked off
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: WVO + Value projection -->
+      <div class="sl-right flex flex-col gap-3">
+        <!-- WVO Formula -->
+        <div class="rounded-2xl p-5" style="background: {{config.brandColor.foreground}};">
+          <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: rgba(255,255,255,0.5);">Weekly Verified Operations (WVO)</div>
+          <div class="flex flex-col gap-2 text-sm mb-4" style="color: rgba(255,255,255,0.85);">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-xs font-bold" style="background: rgba(255,255,255,0.15); color: white;">Assumption — adjust this</span>
+              <span>500 active users per month</span>
+            </div>
+            <div class="text-xs" style="color: rgba(255,255,255,0.6);">× 1 new weekly plan generated per user per week</div>
+            <div class="mt-2 pt-2" style="border-top: 1px solid rgba(255,255,255,0.15);">
+              <span class="font-black text-2xl" style="color: {{config.brandColor.primary}};">500</span>
+              <span class="text-sm ml-2" style="color: rgba(255,255,255,0.7);">verified operations / week</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Value projection -->
+        <div class="rounded-2xl p-5 flex-1" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+          <div class="text-xs font-bold uppercase tracking-wide mb-3" style="color: {{config.brandColor.mutedForeground}};">Total Value Projection</div>
+          <div class="flex flex-col gap-2 text-xs mb-3" style="color: {{config.brandColor.mutedForeground}};">
+            <div>500 ops/wk × <span class="font-bold" style="color: {{config.brandColor.foreground}};">2 hrs saved</span> per user (planning + shopping) × <span class="font-bold" style="color: {{config.brandColor.foreground}};">$25/hr</span> (user time value)</div>
+            <div class="px-2 py-0.5 rounded self-start text-xs font-bold" style="background: {{config.brandColor.border}}; color: {{config.brandColor.mutedForeground}};">Assumption — adjust this</div>
+          </div>
+          <div style="border-top: 1px solid {{config.brandColor.border}}; padding-top: 0.75rem;" class="mt-1">
+            <div class="flex justify-between items-end">
+              <div>
+                <div class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Value per week</div>
+                <div class="font-black text-xl" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">$25,000</div>
+              </div>
+              <div class="text-right">
+                <div class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Annualised (×52)</div>
+                <div class="font-black text-xl" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.primary}};">$1.3M</div>
+              </div>
+            </div>
+            <div class="mt-2 text-xs" style="color: {{config.brandColor.mutedForeground}};">500 × 2 hrs × $25 = $25,000/wk &nbsp;|&nbsp; $25,000 × 52 = $1,300,000/yr</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
