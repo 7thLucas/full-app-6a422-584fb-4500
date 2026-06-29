@@ -1,0 +1,71 @@
+<style>
+  .mode-landscape .sl-metrics { grid-template-columns: repeat(4, 1fr); }
+  .mode-portrait .sl-metrics { grid-template-columns: repeat(2, 1fr); }
+</style>
+<section class="w-full h-full overflow-auto bg-white" style="font-family: {{config.font.textFont}}, sans-serif;">
+  <div class="h-full flex flex-col p-10">
+    <!-- Header -->
+    <div class="mb-6">
+      <div class="flex items-center gap-2 mb-1">
+        <div class="w-6 h-1 rounded-full" style="background: {{config.brandColor.secondary}};"></div>
+        <span class="text-xs font-bold uppercase tracking-widest" style="color: {{config.brandColor.mutedForeground}};">Benefits & Value</span>
+      </div>
+      <h2 class="font-black text-3xl" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">Results users actually experience</h2>
+    </div>
+
+    <!-- Metric cards -->
+    <div class="sl-metrics grid gap-3 mb-5">
+      <div class="rounded-2xl p-4" style="background: {{config.brandColor.accent}}; border: 1px solid {{config.brandColor.sidebarBorder}};">
+        <div class="text-2xl font-black mb-1" style="color: {{config.brandColor.primary}}; font-family: {{config.font.headingFont}}, sans-serif;">10 sec</div>
+        <div class="text-xs font-bold mb-1" style="color: {{config.brandColor.foreground}};">Meal plan generated</div>
+        <div class="text-xs" style="color: {{config.brandColor.mutedForeground}};">vs. hours of manual searching and calculating</div>
+      </div>
+      <div class="rounded-2xl p-4" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <div class="text-2xl font-black mb-1" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">7-day</div>
+        <div class="text-xs font-bold mb-1" style="color: {{config.brandColor.foreground}};">Complete weekly plan</div>
+        <div class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Breakfast, lunch, dinner, snacks, and drinks — all personalized</div>
+      </div>
+      <div class="rounded-2xl p-4" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <div class="text-2xl font-black mb-1" style="color: {{config.brandColor.secondary}}; font-family: {{config.font.headingFont}}, sans-serif;">100%</div>
+        <div class="text-xs font-bold mb-1" style="color: {{config.brandColor.foreground}};">Goal-aligned</div>
+        <div class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Every meal explains how it supports the user's specific health goals</div>
+      </div>
+      <div class="rounded-2xl p-4" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <div class="text-2xl font-black mb-1" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">24/7</div>
+        <div class="text-xs font-bold mb-1" style="color: {{config.brandColor.foreground}};">AI coach available</div>
+        <div class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Nutrition questions, alternatives, cooking tips — always on</div>
+      </div>
+    </div>
+
+    <!-- ROI summary block -->
+    <div class="rounded-2xl p-6 flex-1 flex flex-col justify-between" style="background: {{config.brandColor.primary}};">
+      <div>
+        <h3 class="font-black text-xl mb-2" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.primaryForeground}};">Why users stay: the habit engine</h3>
+        <p class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.85);">{{config.appName}} replaces the fragmented, frustrating process of healthy eating with a single intelligent system. The AI learns from your feedback with every meal logged, every swap made, every chat message — getting smarter and more personal over time. Progress rings, streak badges, and milestone celebrations make habit formation feel rewarding, not clinical.</p>
+      </div>
+      <div class="flex gap-4 mt-4">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">🏆</span>
+          <div>
+            <div class="text-xs font-bold" style="color: {{config.brandColor.primaryForeground}};">Streak badges</div>
+            <div class="text-xs" style="color: rgba(255,255,255,0.7);">Daily motivation</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-xl">🧠</span>
+          <div>
+            <div class="text-xs font-bold" style="color: {{config.brandColor.primaryForeground}};">AI that learns</div>
+            <div class="text-xs" style="color: rgba(255,255,255,0.7);">Gets better every week</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-xl">🛒</span>
+          <div>
+            <div class="text-xs font-bold" style="color: {{config.brandColor.primaryForeground}};">Zero friction</div>
+            <div class="text-xs" style="color: rgba(255,255,255,0.7);">From plan to cart in seconds</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
