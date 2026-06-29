@@ -4,6 +4,7 @@
 - **Name**: NutriPlan
 - **Tagline**: Your AI-powered personal nutrition coach and meal planner — available 24/7
 - **Category**: Health & Wellness / AI Consumer App
+- **Audience**: Personal use — individual consumers (B2C), not teams or enterprise
 - **Platform**: Full-stack web application (mobile-responsive)
 
 ## Who It's For
