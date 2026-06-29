@@ -1,0 +1,70 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-content { width: 52%; }
+  .mode-landscape .sl-visual { width: 48%; }
+  .mode-portrait .sl-content { width: 100%; height: 55%; }
+  .mode-portrait .sl-visual { width: 100%; height: 45%; }
+</style>
+<section class="w-full h-full overflow-auto" style="background: {{config.brandColor.background}}; font-family: {{config.font.textFont}}, sans-serif;">
+  <div class="sl-layout flex h-full">
+    <!-- Content Column -->
+    <div class="sl-content flex flex-col justify-between p-12">
+      <!-- Brand -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background: {{config.brandColor.primary}};">
+          <span style="color: {{config.brandColor.primaryForeground}}; font-size: 18px;">🥗</span>
+        </div>
+        <span class="font-bold text-xl" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">{{config.appName}}</span>
+      </div>
+
+      <!-- Headline -->
+      <div>
+        <div class="inline-block px-3 py-1 rounded-full text-xs font-bold mb-5" style="background: {{config.brandColor.accent}}; color: {{config.brandColor.accentForeground}};">
+          AI-Powered Nutrition Coach
+        </div>
+        <h1 class="font-black leading-none mb-5" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}}; font-size: 2.7rem; letter-spacing: -0.02em;">
+          Eat smarter.<br/>
+          <span style="color: {{config.brandColor.primary}};">Live healthier.</span><br/>
+          Every day.
+        </h1>
+        <p class="text-sm leading-relaxed" style="color: {{config.brandColor.mutedForeground}}; max-width: 320px;">
+          Your personal AI nutrition coach and meal planner — available 24/7. Personalized weekly plans, smart grocery lists, and an AI companion that continuously learns your habits.
+        </p>
+      </div>
+
+      <!-- Attribution -->
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Visual Column -->
+    <div class="sl-visual relative overflow-hidden" style="background: {{config.brandColor.accent}};">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=beautiful%20colorful%20healthy%20meal%20prep%20bowls%20fresh%20vegetables%20fruits%20premium%20wellness%20food%20photography%20bright%20vibrant"
+        alt="Healthy meal bowls"
+        class="w-full h-full object-cover"
+      />
+      <!-- Stat card overlay -->
+      <div class="absolute bottom-8 left-6 right-6 rounded-2xl p-4" style="background: rgba(255,255,255,0.95); box-shadow: 0 8px 32px rgba(0,0,0,0.12);">
+        <div class="flex items-center justify-around">
+          <div class="text-center">
+            <div class="font-black text-2xl" style="color: {{config.brandColor.primary}}; font-family: {{config.font.headingFont}}, sans-serif;">AI</div>
+            <div class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Powered</div>
+          </div>
+          <div style="width: 1px; height: 32px; background: {{config.brandColor.border}};"></div>
+          <div class="text-center">
+            <div class="font-black text-2xl" style="color: {{config.brandColor.secondary}}; font-family: {{config.font.headingFont}}, sans-serif;">24/7</div>
+            <div class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Coach</div>
+          </div>
+          <div style="width: 1px; height: 32px; background: {{config.brandColor.border}};"></div>
+          <div class="text-center">
+            <div class="font-black text-2xl" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">100%</div>
+            <div class="text-xs" style="color: {{config.brandColor.mutedForeground}};">Personal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
