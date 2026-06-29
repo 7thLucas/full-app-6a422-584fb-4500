@@ -1,0 +1,69 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+<section class="w-full h-full overflow-auto bg-white" style="font-family: {{config.font.textFont}}, sans-serif;">
+  <div class="h-full flex flex-col p-10">
+    <!-- Header -->
+    <div class="mb-5">
+      <div class="flex items-center gap-2 mb-1">
+        <div class="w-6 h-1 rounded-full" style="background: {{config.brandColor.primary}};"></div>
+        <span class="text-xs font-bold uppercase tracking-widest" style="color: {{config.brandColor.mutedForeground}};">Core Features</span>
+      </div>
+      <h2 class="font-black text-3xl" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">Everything your users need to succeed</h2>
+    </div>
+
+    <!-- Persona chips -->
+    <div class="flex gap-2 mb-5">
+      <div class="px-4 py-1.5 rounded-full text-sm font-bold" style="background: {{config.brandColor.primary}}; color: {{config.brandColor.primaryForeground}};">🎯 Goal-Seeker</div>
+      <div class="px-4 py-1.5 rounded-full text-sm font-medium" style="background: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}};">⚡ Busy Professional</div>
+      <div class="px-4 py-1.5 rounded-full text-sm font-medium" style="background: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}};">🌱 Diet-Restricted</div>
+      <div class="px-4 py-1.5 rounded-full text-sm font-medium" style="background: {{config.brandColor.muted}}; color: {{config.brandColor.mutedForeground}};">🔰 Beginner</div>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="sl-grid grid gap-3 flex-1">
+      <!-- AI Meal Plans -->
+      <div class="rounded-2xl p-5 flex flex-col" style="background: {{config.brandColor.accent}}; border: 1px solid {{config.brandColor.sidebarBorder}};">
+        <span class="text-2xl mb-2">🗓️</span>
+        <h3 class="font-bold text-sm mb-1" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">AI Meal Plans</h3>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Personalized weekly plans — breakfast, lunch, dinner, snacks, drinks — with goal-linked explanations for every choice.</p>
+      </div>
+
+      <!-- AI Nutrition Coach -->
+      <div class="rounded-2xl p-5 flex flex-col" style="background: {{config.brandColor.primary}};">
+        <span class="text-2xl mb-2">🤖</span>
+        <h3 class="font-bold text-sm mb-1" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.primaryForeground}};">AI Nutrition Coach</h3>
+        <p class="text-xs leading-relaxed" style="color: rgba(255,255,255,0.8);">Chat anytime. Answers nutrition questions, recommends alternatives, explains ingredients, and continuously improves your plans.</p>
+      </div>
+
+      <!-- Recipe Library -->
+      <div class="rounded-2xl p-5 flex flex-col" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl mb-2">📚</span>
+        <h3 class="font-bold text-sm mb-1" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">Recipe Library</h3>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Browse, save, and favorite recipes. Track completed meals. Beautiful food photography and illustrated ingredient cards.</p>
+      </div>
+
+      <!-- Smart Grocery Lists -->
+      <div class="rounded-2xl p-5 flex flex-col" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl mb-2">🛒</span>
+        <h3 class="font-bold text-sm mb-1" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">Smart Grocery Lists</h3>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Auto-generated from your weekly plan. Interactive check-off while shopping. Updates instantly when you swap meals.</p>
+      </div>
+
+      <!-- Progress Tracking -->
+      <div class="rounded-2xl p-5 flex flex-col" style="background: {{config.brandColor.muted}}; border: 1px solid {{config.brandColor.border}};">
+        <span class="text-2xl mb-2">📈</span>
+        <h3 class="font-bold text-sm mb-1" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">Progress Tracking</h3>
+        <p class="text-xs leading-relaxed" style="color: {{config.brandColor.mutedForeground}};">Nutrition, water intake, weight over time, achievement badges, and streaks to keep healthy habits alive.</p>
+      </div>
+
+      <!-- AI Reminders -->
+      <div class="rounded-2xl p-5 flex flex-col" style="background: {{config.brandColor.secondary}};">
+        <span class="text-2xl mb-2">🔔</span>
+        <h3 class="font-bold text-sm mb-1" style="font-family: {{config.font.headingFont}}, sans-serif; color: #1C1917;">AI Reminders</h3>
+        <p class="text-xs leading-relaxed" style="color: #44403C;">Meal, hydration, grocery, and planning reminders — fully customizable. Proactive, never intrusive.</p>
+      </div>
+    </div>
+  </div>
+</section>
