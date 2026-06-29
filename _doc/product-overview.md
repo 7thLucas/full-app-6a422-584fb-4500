@@ -1,69 +1,113 @@
-Build an AI-powered Meal Planner application that helps users eat healthier by creating personalized meal plans based on their lifestyle, health goals, dietary preferences, allergies, and available ingredients.
+# NutriPlan — Product Overview
 
-The app should feel like having a personal nutrition coach and meal planner available 24/7. Instead of manually searching for recipes or calculating nutrition, users simply provide their preferences and goals, and the AI creates a complete weekly meal plan tailored to their needs.
+## Product Identity
+- **Name**: NutriPlan
+- **Tagline**: Your AI-powered personal nutrition coach and meal planner — available 24/7
+- **Category**: Health & Wellness / AI Consumer App
+- **Platform**: Full-stack web application (mobile-responsive)
 
-When users first join, they complete a simple onboarding questionnaire including:
-- Health goals (Weight Loss, Muscle Gain, Maintenance, Healthy Lifestyle)
-- Dietary preferences (Vegetarian, Vegan, Keto, High Protein, Mediterranean, etc.)
+## Who It's For
+
+**Primary Users**: Health-conscious individuals who want to eat better but struggle with the complexity of meal planning — busy professionals, people with specific dietary needs or health goals, beginners to healthy eating, and those managing food allergies or intolerances.
+
+**User Archetypes**:
+1. **The Goal-Seeker** — Actively pursuing Weight Loss, Muscle Gain, or a Healthy Lifestyle. Needs structured, goal-aligned meal plans with progress tracking.
+2. **The Busy Professional** — Wants to eat healthier but has no time to research or plan. Needs fast, effortless planning with zero complexity.
+3. **The Diet-Restricted** — Managing allergies, intolerances, or specific dietary preferences (Vegan, Keto, Mediterranean, High Protein, Vegetarian, etc.).
+4. **The Beginner** — New to healthy eating and needs guidance, structure, and ongoing motivation to build habits.
+
+## The Problem
+
+Users who want to eat healthier face a fragmented, time-consuming process: manually searching recipes, calculating nutrition, cross-referencing dietary restrictions, building grocery lists, and tracking progress across multiple disconnected tools. The result is inconsistency, frustration, and abandonment of health goals entirely.
+
+## The Solution
+
+NutriPlan acts as a 24/7 personal nutrition coach. Users complete a simple onboarding questionnaire and the AI generates a complete, personalized weekly meal plan — with explanations for every meal choice — in seconds. The platform unifies meal planning, grocery management, nutrition tracking, recipe browsing, and progress monitoring in one intelligent, motivating experience.
+
+## Onboarding Questionnaire
+
+New users complete a personalized profile covering:
+- Health goals: Weight Loss, Muscle Gain, Maintenance, Healthy Lifestyle
+- Dietary preferences: Vegetarian, Vegan, Keto, High Protein, Mediterranean, and more
 - Food allergies and intolerances
 - Favorite and disliked foods
 - Daily meal schedule
 - Cooking skill level
-- Available cooking time
+- Available cooking time per meal
 - Budget preference
 
-The AI should generate personalized meal plans that include breakfast, lunch, dinner, snacks, and drinks. Each recommendation should explain why it was selected and how it supports the user's goals.
+## Core Features
 
-Users should be able to:
-- Browse and save recipes
-- Replace any suggested meal with another recommendation
-- Generate meals using ingredients they already have at home
-- Build grocery shopping lists automatically
-- Check off purchased ingredients while shopping
-- Save favorite meals and recipes
-- Track meals they have completed
-- Record daily water intake
-- Track weight and health progress over time
+### 1. AI Meal Plans
+- Generates personalized weekly meal plans: breakfast, lunch, dinner, snacks, and drinks
+- Each recommendation includes an explanation tied to the user's specific goals
+- Users can replace any meal with an AI-generated alternative with one click
+- Ingredient-based meal generator: users input available pantry items, AI suggests matching meals
 
-The platform should include an AI Nutrition Coach that users can chat with anytime. The AI assistant should answer nutrition questions, recommend healthier alternatives, explain ingredients, suggest recipes, provide cooking tips, and continuously improve future meal plans based on the user's eating habits and feedback.
+### 2. AI Nutrition Coach
+- 24/7 chat interface powered by AI
+- Answers nutrition questions, recommends healthier alternatives, explains ingredients
+- Provides recipe suggestions and cooking tips on demand
+- Learns from user feedback and eating habits to continuously improve future meal plans
 
-The AI should proactively help users stay on track by sending personalized reminders and recommendations, such as:
+### 3. Recipe Library
+- Browse, save, and favorite recipes
+- Track completed meals
+- Beautiful food photography and illustrated ingredient cards
+
+### 4. Smart Grocery Lists
+- Auto-generated from the active weekly meal plan
+- Interactive check-off interface for use while shopping
+- Updates automatically when meals are swapped or replaced
+
+### 5. Health & Progress Tracking
+- Nutrition tracking: calories, macros, and micros
+- Daily water intake tracker
+- Weight and health progress over time
+- Achievement badges and streak system to reinforce habit formation
+
+### 6. AI Reminders & Notifications (Fully Customizable)
 - Meal reminders
 - Grocery shopping reminders
 - Hydration reminders
 - Weekly meal planning reminders
 - Healthy eating tips
-- Suggestions to try new recipes
+- New recipe suggestions
 - Progress updates and milestone celebrations
+- Users control which reminder types they receive and at what frequency
 
-Users should be able to customize which reminders they receive and how often they receive them.
+## Dashboard
 
-Key Features:
-- Personalized onboarding
-- AI-generated meal plans
-- AI Nutrition Coach
-- Recipe library
-- Ingredient-based meal generator
-- Smart grocery lists
-- Meal tracker
-- Nutrition tracking
-- Water intake tracker
-- Favorite recipes
-- Progress tracking
-- AI reminders and notifications
-
-Dashboard:
-The dashboard should be visually engaging and motivate users to maintain healthy habits. It should include:
-- Today's meal plan
+A visually engaging dashboard designed to motivate users to maintain healthy habits. Includes:
+- Today's meal plan view
 - Daily calorie and nutrition summary
-- Water intake progress
+- Water intake progress ring
 - Weekly health goals
 - Grocery list preview
-- AI recommendations
+- AI recommendations panel
 - Meal completion progress
 - Health insights
 - Achievement badges and streaks
 
-The application should have a modern, colorful, and friendly design inspired by premium wellness and fitness apps. The user experience should feel clean, motivating, and enjoyable, using beautiful food photography, illustrated ingredient cards, progress rings, achievement badges, and interactive dashboards.
+## Design Principles
 
-The interface should prioritize simplicity while making healthy eating feel fun and rewarding through visual progress, personalized recommendations, and an intelligent AI companion that continuously learns from the user's preferences and habits.
+- **Aesthetic**: Modern, colorful, friendly — premium wellness and fitness app feel
+- **Visual language**: Beautiful food photography, illustrated ingredient cards, progress rings, achievement badges, interactive dashboards
+- **UX priority**: Simplicity first; healthy eating should feel fun and rewarding, not clinical or overwhelming
+- **Motivation system**: Visual progress, personalized AI recommendations, badges, and streaks drive engagement and retention
+
+## Brand
+
+- **Name**: NutriPlan
+- **Tone**: Friendly, encouraging, intelligent — like a supportive personal coach, not a doctor or lecturer
+- **Colors**: Fresh health greens (primary — vitality, growth), warm amber (secondary — energy, warmth), clean off-white backgrounds
+- **Typography**: Modern humanist — readable, approachable, premium. Heading: Plus Jakarta Sans. Body: Nunito.
+- **Personality**: Motivating, warm, science-backed, non-judgmental
+
+## Strategic Principles
+
+1. **AI does the heavy lifting** — zero manual planning complexity for users; the app works with just a few answers
+2. **Every feature connects to the user's stated goals** — personalization is the core promise, not generic advice
+3. **Progress visibility creates habit formation** — badges, streaks, and nutrition tracking drive long-term retention
+4. **The AI Nutrition Coach is the key differentiator** — not just meal plans, but an ongoing intelligent relationship that improves over time
+5. **Reminders respect the user** — fully customizable, never nagging, always relevant to current goals
